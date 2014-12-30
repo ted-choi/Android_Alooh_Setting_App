@@ -1,0 +1,161 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    >
+        <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/alooh_logo_land_w4"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/line_hori"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_horizonal"
+        android:scaleType="fitXY"
+        />
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="5dp"
+    >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:scrollbars="vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/quickguide_summary"
+        android:textColor="#FF000000"
+        android:textSize="16dp" />
+
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginBottom="5dp"
+	    >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#AA000000"
+        android:text="@string/quickguide_phase1"/>
+</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/quickguide1" />
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginBottom="5dp"
+	    >
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#AA000000"
+        android:text="@string/quickguide_phase2"/>
+    </LinearLayout>
+        <ImageView
+        android:id="@+id/quickguide2"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/quickguide2" />
+<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginBottom="5dp"
+	    >
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#AA000000"
+        android:text="@string/quickguide_phase3"/>
+    </LinearLayout>
+        <ImageView
+
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/quickguide3" />        
+<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginBottom="5dp"
+	    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#AA000000"
+        android:text="@string/quickguide_phase4"/>
+    </LinearLayout>
+        <ImageView
+
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/quickguide4" />   
+	<TextView
+        android:id="@+id/askconnection"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+            android:paddingTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/move_to_cloud_ask_msg"
+        android:textSize="17dp" 
+        android:textColor="#FF000000" />
+    <ImageButton
+        android:id="@+id/launch_browser"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+     	android:background="#00FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/alooh1" />
+        
+        
+</LinearLayout>    
+    </ScrollView>  
+</LinearLayout>

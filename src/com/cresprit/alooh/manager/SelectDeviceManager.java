@@ -104,7 +104,10 @@ public class SelectDeviceManager{
 	}
 	public Vector<DeviceInfo> getSearchAP() {
 		wifiMgr.startScan();
+		apList.clear();
+		deviceList.clear();
 		apList = (ArrayList<ScanResult>) wifiMgr.getScanResults();
+		
 		
 		for(int i=0; i < apList.size(); i++)
 		{
@@ -211,6 +214,7 @@ public class SelectDeviceManager{
 	
 	public void sendAuthKeyToDevice(String _authKey)
 	{
+		timeout = false;
 		mAuthKey = _authKey;
 		new ConnectDevice().execute(mAuthKey);
 	}

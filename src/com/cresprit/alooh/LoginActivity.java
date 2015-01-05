@@ -446,7 +446,8 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 		{
 			UserManager.getInstance(LoginActivity.this).setAuthKey(key);
 			Log.i("","*************KEY : "+key+"*********************");
-			//Intent intent = new Intent(LoginActivity.this, AloohActivity.class);						
+			//Intent intent = new Intent(LoginActivity.this, AloohActivity.class);	
+			finish();
 			Intent intent = new Intent(LoginActivity.this, SetDeviceNameActivity.class);
 			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			startActivityForResult(intent, 0);

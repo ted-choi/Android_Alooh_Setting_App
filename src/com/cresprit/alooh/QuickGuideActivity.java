@@ -32,12 +32,20 @@ public class QuickGuideActivity extends Activity implements View.OnClickListener
 		switch(v.getId())
 		{
 		case R.id.launch_browser:
+			
 			Intent intent = new Intent();
 			intent.setAction(Intent.ACTION_VIEW);
 			intent.setData(Uri.parse(UserManager.ALOOH_URI));
 			startActivityForResult(intent, 0);
 			break;
 		}
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		finish();
 	}
 	
 }

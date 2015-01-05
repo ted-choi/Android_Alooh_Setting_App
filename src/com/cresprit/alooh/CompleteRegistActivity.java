@@ -38,6 +38,7 @@ public class CompleteRegistActivity extends Activity implements View.OnClickList
 		switch(v.getId())
 		{
 		case R.id.connect:
+			finish();
 			Intent intent = new Intent(CompleteRegistActivity.this, QuickGuideActivity.class);
 			startActivity(intent);
 			break;
